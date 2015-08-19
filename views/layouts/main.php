@@ -42,7 +42,6 @@ if (Yii::$app->controller->action->id === 'login') {
     	<script src="<?= Yii::$app->params['plugin']?>js/highcharts.js"></script>
 		<script src="<?= Yii::$app->params['plugin']?>js/exporting.js"></script>
 		<script src="<?= Yii::$app->params['plugin']?>js/chartdepok.js"></script>
-		<script src="<?= Yii::$app->params['plugin']?>js/chartHumDepok.js"></script>
     	
     	<!-- buat google maps -->
     	 <script src="<?= Yii::$app->params['plugin']?>js/googlemaps.js"></script> 

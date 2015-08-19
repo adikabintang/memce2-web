@@ -58,9 +58,9 @@
 				<div id="depokMap" style="width:300px;height:300px;"></div>
 				<br>
 				<br>
-				<h4><b>Hasil Analisa Otomatis</b></h4><br>
-				<h5>Pengelompokkan Cuaca: </h5>
-				<p><i>Berawan</i></p>
+				<h3><b>Hasil Analisa Otomatis</b></h3><br>
+				<h4>Pengelompokkan Cuaca: </h4>
+				<h4><i>Berawan</i></h4>
 			</div>
 		</div>
 	</div>
