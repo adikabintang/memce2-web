@@ -2,6 +2,6 @@
 
 return [
     'adminEmail' => 'admin@example.com',
-    'plugin'=>'/memce2/',
+    'plugin'=>'/memce2-web/',
     'css'=>'/css/'
 ];

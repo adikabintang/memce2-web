@@ -1,19 +1,10 @@
 var $jq = jQuery.noConflict();
-var chart;
 var chartHum;
-var chartSpeed;
-var chartHujan;
-var chartCahaya;
-var chartTekanan;
-/**
- * Request data from the server, add it to the graph and set a timeout 
- * to request again
- */
-function requestData() {
+function requestDataHum() {
     $jq.ajax({
-        url: '/memce2-web/web/index.php/location/livedepoksuhu',
+        url: '/memce2-web/web/index.php/location/livedepokkelembaban',
         success: function(point) {
-            var series = chart.series[0],
+            var series = chartHum.series[0],
                 shift = series.data.length > 20; // shift if the series is 
                                                  // longer than 20
 
@@ -21,10 +12,10 @@ function requestData() {
             var x = (new Date()).getTime() + (3600000*7), // current time
                                 y = parseInt(point);
                                 
-            chart.series[0].addPoint([x,y], true, shift);
+            chartHum.series[0].addPoint([x,y], true, shift);
             
             // call it again after one second
-            setTimeout(requestData, 1000);
+            setTimeout(requestDataHum, 1000);
          	
         },
         cache: false
@@ -32,16 +23,16 @@ function requestData() {
 }
 
 $jq(document).ready(function() {
-    chart = new Highcharts.Chart({
+    chartHum = new Highcharts.Chart({
         chart: {
-            renderTo: 'suhuChart',
+            renderTo: 'humidityChart',
             defaultSeriesType: 'spline',
             events: {
-                load: requestData
+                load: requestDataHum
             }
         },
         title: {
-            text: 'Suhu'
+            text: 'Kelembaban'
         },
         xAxis: {
             type: 'datetime',
@@ -52,12 +43,12 @@ $jq(document).ready(function() {
             minPadding: 0.2,
             maxPadding: 0.2,
             title: {
-                text: 'Suhu',
+                text: 'Kelembaban',
                 margin: 80
             }
         },
         series: [{
-            name: 'Suhu',
+            name: 'Kelembaban',
             data: []
         }]
     });        
