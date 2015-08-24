@@ -27,6 +27,21 @@
 					<div id="humidityChart" style="min-width: 300px; height: 300px; margin: 2"></div>
 				</div>
 				<br>
+				<div class="panel panel-info">
+					<div id="speedChart" style="min-width: 300px; height: 300px; margin: 2"></div>
+				</div>
+				<br>
+				<div class="panel panel-info">
+					<div id="hujanChart" style="min-width: 300px; height: 300px; margin: 2"></div>
+				</div>
+				<br>
+				<div class="panel panel-info">
+					<div id="cahayaChart" style="min-width: 300px; height: 300px; margin: 2"></div>
+				</div>
+				<br>
+				<div class="panel panel-info">
+					<div id="tekananChart" style="min-width: 300px; height: 300px; margin: 2"></div>
+				</div>
 				<table class="table table-hover table-bordered" id="tabledepok">
 					<thead>
 						<th>Suhu</th>
