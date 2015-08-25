@@ -14,7 +14,7 @@
 						<td>: Depok</td>
 					</tr>
 						<td>Status alat</td>
-						<td>: Aktif</td>
+						<td>: <span class="label label-info">Aktif</span></td>
 					</tr>
 				</table>
 				

@@ -42,9 +42,10 @@ if (Yii::$app->controller->action->id === 'login') {
     	<script src="<?= Yii::$app->params['plugin']?>js/highcharts.js"></script>
 		<script src="<?= Yii::$app->params['plugin']?>js/exporting.js"></script>
 		<script src="<?= Yii::$app->params['plugin']?>js/chartdepok.js"></script>
+		<script src="<?= Yii::$app->params['plugin']?>js/petaDiHome.js"></script>
     	
     	<!-- buat google maps -->
-    	 <script src="<?= Yii::$app->params['plugin']?>js/googlemaps.js"></script> 
+    	 <script src="https://maps.googleapis.com/maps/api/js"></script> 
     	<script>
 			function initialize() {
 			  var mapProp = {
