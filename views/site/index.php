@@ -1,51 +1,103 @@
 <?php
-/* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+
 ?>
-<div class="site-index">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Home</h3>
+	</div>
+	
+	<div class="panel-body">
+		<!-- isi disini. Ini desain sederhana gw -->
+		<div class="jumbotron">
+	        <h1>Selamat Datang!</h1>
+	
+	        <p class="lead">MEMCE2 Weather Portal - Portal Untuk Mengamati Kondisi Cuaca dan Iklim</p>
+    	</div>
+    	
+    	<div class="body-content">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
+	        <div class="row">
+	            <div class="col-lg-4">
+	            	<div class="panel panel-default">
+  						<div class="panel-body">
+			                <h2>Depok </h2>
+			                <h3>Status: <span class="label label-info">Berawan</span></h3>
+							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+						    </a>
+			                
+			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Depok &raquo;</a></p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4">
+	            	<div class="panel panel-default">
+  						<div class="panel-body">
+			                <h2>Bogor</h2>
+							<h3>Status: <span class="label label-primary">Hujan</span></h3>
+							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+						    </a>
+			                
+			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Bogor &raquo;</a></p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4">
+	            	<div class="panel panel-default">
+  						<div class="panel-body">
+			                <h2>Jakarta</h2>
+							<h3>Status: <span class="label label-danger">Panas</span></h3>
+							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+						    </a>
+			                
+			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Jakarta &raquo;</a></p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4">
+	            	<div class="panel panel-default">
+  						<div class="panel-body">
+			                <h2>Jogjakarta</h2>
+							<h3>Status: <span class="label label-warning">Cerah</span></h3>
+							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+						    </a>
+			                
+			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Jogjakarta &raquo;</a></p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4">
+	            	<div class="panel panel-default">
+  						<div class="panel-body">
+			                <h2>Bandung</h2>
+							<h3>Status: <span class="label label-success">Sejuk</span></h3>
+							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+						    </a>
+			                
+			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Bandung &raquo;</a></p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-lg-4">
+	            	<div class="panel panel-default">
+  						<div class="panel-body">
+			                <h2>Tangerang</h2>
+							<h3>Status: <span class="label label-success">Sejuk</span></h3>
+							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+						    </a>
+			                
+			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Tangerang &raquo;</a></p>
+	            		</div>
+	            	</div>
+	            </div>
+	        </div>
+	
+	    </div>
+		<!-- ampe sini -->
+	</div>
 </div>

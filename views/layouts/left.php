@@ -18,7 +18,9 @@ use yii\bootstrap\Nav;
         </form>
         <!-- /.search form -->
 
+		<!--
         <?=
+        
         Nav::widget(
             [
                 'encodeLabels' => false,
@@ -34,8 +36,9 @@ use yii\bootstrap\Nav;
                     ],
                 ],
             ]
-        );
+        );		 
         ?>
+       -->
 
         <ul class="sidebar-menu">
             <li class="treeview">
@@ -50,6 +53,9 @@ use yii\bootstrap\Nav;
                     </li>
                     
                 </ul>
+            </li>
+            <li>
+            	<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>"><span class="fa fa-info"></span>Tentang Kami</a>
             </li>
         </ul>
 
