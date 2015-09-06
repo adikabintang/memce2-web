@@ -21,7 +21,7 @@
 	            	<div class="panel panel-default">
   						<div class="panel-body">
 			                <h2>Depok </h2>
-			                <h3>Status: <span class="label label-info">Berawan</span></h3>
+			                <h3>Status: <span class="label label-info">Aktif</span></h3>
 							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
 						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
 						    </a>
@@ -34,12 +34,12 @@
 	            	<div class="panel panel-default">
   						<div class="panel-body">
 			                <h2>Bogor</h2>
-							<h3>Status: <span class="label label-primary">Hujan</span></h3>
-							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
-						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+							<h3>Status: <span class="label label-danger">Belum Tersedia</span></h3>
+							<a href="#" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_bogor.png'?>" alt="depok">
 						    </a>
 			                
-			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Bogor &raquo;</a></p>
+			                <p><a class="btn btn-default" href="#">Lihat Bogor &raquo;</a></p>
 	            		</div>
 	            	</div>
 	            </div>
@@ -47,9 +47,9 @@
 	            	<div class="panel panel-default">
   						<div class="panel-body">
 			                <h2>Jakarta</h2>
-							<h3>Status: <span class="label label-danger">Panas</span></h3>
-							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
-						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+							<h3>Status: <span class="label label-danger">Belum Tersedia</span></h3>
+							<a href="#" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_jakarta.png'?>" alt="depok">
 						    </a>
 			                
 			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Jakarta &raquo;</a></p>
@@ -60,12 +60,12 @@
 	            	<div class="panel panel-default">
   						<div class="panel-body">
 			                <h2>Jogjakarta</h2>
-							<h3>Status: <span class="label label-warning">Cerah</span></h3>
-							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
-						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+							<h3>Status: <span class="label label-danger">Belum Tersedia</span></h3>
+							<a href="#" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_jogja.png'?>" alt="depok">
 						    </a>
 			                
-			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Jogjakarta &raquo;</a></p>
+			                <p><a class="btn btn-default" href="#">Lihat Jogjakarta &raquo;</a></p>
 	            		</div>
 	            	</div>
 	            </div>
@@ -73,12 +73,12 @@
 	            	<div class="panel panel-default">
   						<div class="panel-body">
 			                <h2>Bandung</h2>
-							<h3>Status: <span class="label label-success">Sejuk</span></h3>
-							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
-						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+							<h3>Status: <span class="label label-danger">Belum Tersedia</span></h3>
+							<a href="#" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_bandung.png'?>" alt="depok">
 						    </a>
 			                
-			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Bandung &raquo;</a></p>
+			                <p><a class="btn btn-default" href="#">Lihat Bandung &raquo;</a></p>
 	            		</div>
 	            	</div>
 	            </div>
@@ -86,12 +86,12 @@
 	            	<div class="panel panel-default">
   						<div class="panel-body">
 			                <h2>Tangerang</h2>
-							<h3>Status: <span class="label label-success">Sejuk</span></h3>
-							<a href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>" class="thumbnail">
-						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_depok.JPG'?>" alt="depok">
+							<h3>Status: <span class="label label-danger">Belum Tersedia</span></h3>
+							<a href="#" class="thumbnail">
+						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_tangerang.png'?>" alt="depok">
 						    </a>
 			                
-			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Tangerang &raquo;</a></p>
+			                <p><a class="btn btn-default" href="#">Lihat Tangerang &raquo;</a></p>
 	            		</div>
 	            	</div>
 	            </div>
