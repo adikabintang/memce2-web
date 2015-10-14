@@ -114,6 +114,21 @@ a.desc:after {
     width: 150px;
 }
 
-.btn.btn-info{
-    width: 150px;
+#tablePembacaan{
+    border-top: none !important;
+    background-color: #66FFFF;
+}
+
+#boxTablePembacaan{
+    border-top: none !important;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#tabledepok_paginate > [role="button"]{
+    margin-left: 10px;
+}
+
+.profile{
+    width: 50%;
+    height: 50%;
 }

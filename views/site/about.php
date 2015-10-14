@@ -6,30 +6,30 @@
 	<div class="panel-body">
 		<!-- isi disini. Ini desain sederhana gw -->
 		<div class="body-content">
-			<div class="jumbotron">
-			  <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/memce_tim.jpg'?>" alt="tim memce2"
-			  	style="height:350px">
-			</div>
-        <div class="row">
-        	<div class="col-lg-4">
-                <h3>Sanadhi Sutandi</h3>
-				Departemen Teknik Elektro,<br>
-				Teknik Komputer 2012
-            </div>
-            <div class="col-lg-4">
-                <h3>Jendra Dwiputra</h3>
-				Departemen Teknik Elektro,<br>
-				Teknik Elektro Kendali 2012
-            </div>
-            <div class="col-lg-4">
-                <h3>Adika Bintang Sulaeman</h3>
-				Departemen Teknik Elektro,<br>
-				Teknik Komputer 2012
-            </div>
-            
-        </div>
+			
+	        <div class="row">
+	        	<div class="col-lg-4">
+	        		<img src="<?php echo Yii::$app->request->baseUrl. '/pictures/sanadhi.jpg'?>" alt="sanadhi" class="profile">
+	                <h3>Sanadhi Sutandi</h3>
+					Departemen Teknik Elektro,<br>
+					Teknik Komputer 2012
+	            </div>
+	            <div class="col-lg-4">
+	            	<img src="<?php echo Yii::$app->request->baseUrl. '/pictures/jendra.jpg'?>" alt="sanadhi" class="profile">
+	                <h3>Jendra Dwiputra</h3>
+					Departemen Teknik Elektro,<br>
+					Teknik Elektro Kendali 2012
+	            </div>
+	            <div class="col-lg-4">
+	            	<img src="<?php echo Yii::$app->request->baseUrl. '/pictures/bintang.jpg'?>" alt="sanadhi" class="profile">
+	                <h3>Adika Bintang Sulaeman</h3>
+					Departemen Teknik Elektro,<br>
+					Teknik Komputer 2012
+	            </div>
+	            
+	        </div>
 
-    </div>
+   		</div>
 		<!-- ampe sini -->
 	</div>
 </div>

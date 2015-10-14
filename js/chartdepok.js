@@ -58,6 +58,9 @@ $jq(document).ready(function() {
         },
         series: [{
             name: 'Suhu',
+            threshold: 30,
+            negativeColor: 'blue',
+            color: 'yellow',
             data: []
         }]
     });        
@@ -111,6 +114,9 @@ $jq(document).ready(function() {
         },
         series: [{
             name: 'Kelembaban',
+            threshold: 80,
+            negativeColor: 'blue',
+            color: 'yellow',
             data: []
         }]
     });        
@@ -164,6 +170,9 @@ $jq(document).ready(function() {
         },
         series: [{
             name: 'Kecepatan Angin',
+            threshold: 3,
+            negativeColor: 'blue',
+            color: 'yellow',
             data: []
         }]
     });        
@@ -217,6 +226,9 @@ $jq(document).ready(function() {
         },
         series: [{
             name: 'Curah Hujan',
+            threshold: 30,
+            negativeColor: 'blue',
+            color: 'yellow',
             data: []
         }]
     });        
@@ -270,6 +282,9 @@ $jq(document).ready(function() {
         },
         series: [{
             name: 'Intensitas Cahaya',
+            threshold: 50,
+            negativeColor: 'blue',
+            color: 'yellow',
             data: []
         }]
     });        
@@ -323,6 +338,9 @@ $jq(document).ready(function() {
         },
         series: [{
             name: 'Tekanan Udara',
+            threshold: 1000,
+            negativeColor: 'blue',
+            color: 'yellow',
             data: []
         }]
     });        
