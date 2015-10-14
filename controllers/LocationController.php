@@ -86,4 +86,21 @@ class LocationController extends \yii\web\Controller
 		
 		echo json_encode($tekanan);
 	}
+	
+	public function actionGetsuhu() {
+		$suhu = isset($_GET['suhu']) ? $_GET['suhu'] : 0;
+		$kelembaban = isset($_GET['kelembaban']) ? $_GET['kelembaban'] : 0;
+		$speed = isset($_GET['kecAngin']) ? $_GET['kecAngin'] : 0;
+		$tekanan = isset($_GET['tekanan']) ? $_GET['tekanan'] : 0;
+		$cahaya = isset($_GET['cahaya']) ? $_GET['cahaya'] : 0;
+		$hujan = isset($_GET['hujan']) ? $_GET['hujan'] : 0;
+		$depok = new Depok();
+		$depok->suhu = $suhu;
+		$depok->kelembaban = $kelembaban;
+		$depok->kecepatan_angin = $speed;
+		$depok->tekanan_udara = $tekanan;
+		$depok->intensitas_cahaya = $cahaya;
+		$depok->curah_hujan = $hujan;
+		$depok->save();
+	}
 }
