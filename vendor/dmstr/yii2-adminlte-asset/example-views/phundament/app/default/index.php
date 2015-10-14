@@ -73,7 +73,7 @@
             <div class="small-box bg-red">
                 <div class="inner">
                     <h3>
-                        <?= APP_VERSION ?>
+                        <?= getenv('APP_VERSION') ?>
                     </h3>
 
                     <p>
@@ -93,6 +93,35 @@
 
 </div>
 
+<div class="row">
+    <div class="col-sm-12">
+        <!-- Default box -->
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Languages</h3>
+            </div>
+            <div class="box-body">
+                <?php
+                foreach (\Yii::$app->urlManager->languages AS $name) {
+                    echo yii\helpers\Html::a(
+                        $name,
+                        ['', \Yii::$app->urlManager->languageParam=>$name],
+                        ['class' => 'btn btn-default btn-flat '.(Yii::$app->language == $name?'active':'')]
+                    );
+                }
+                ?>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <small>Registered in <code>urlManager</code> application component.</small>
+            </div>
+            <!-- /.box-footer-->
+        </div>
+        <!-- /.box -->
+    </div>
+
+</div>
+
 
 <?php if (Yii::$app->user->identity->isAdmin): ?>
 
@@ -101,7 +130,7 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Modules*</h3>
+                    <h3 class="box-title">Modules</h3>
                 </div>
                 <div class="box-body">
                     <?php
@@ -110,14 +139,14 @@
                         echo yii\helpers\Html::a(
                             $module->id,
                             ['/' . $module->id],
-                            ['class' => 'btn btn-default btn-block btn-flat']
+                            ['class' => 'btn btn-default btn-flat']
                         );
                     }
                     ?>
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
-                    <small>(*) Registered in application from configuration or bootstrapping.</small>
+                    <small>Registered in application from configuration or bootstrapping.</small>
                 </div>
                 <!-- /.box-footer-->
             </div>

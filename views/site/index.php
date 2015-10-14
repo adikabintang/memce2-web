@@ -52,7 +52,7 @@
 						      <img src="<?php echo Yii::$app->request->baseUrl. '/pictures/map_jakarta.png'?>" alt="depok">
 						    </a>
 			                
-			                <p><a class="btn btn-default" href="<?= \yii\helpers\Url::to(['/location/gotodepok']) ?>">Lihat Jakarta &raquo;</a></p>
+			                <p><a class="btn btn-default" href="#">Lihat Jakarta &raquo;</a></p>
 	            		</div>
 	            	</div>
 	            </div>
