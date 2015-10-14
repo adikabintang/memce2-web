@@ -55,10 +55,10 @@ use yii\bootstrap\Nav;
                 </ul>
             </li>
             <li>
-            	<a href="<?= \yii\helpers\Url::to(['/site/about']) ?>"><span class="fa fa-user"></span>Tentang Kami</a>
+            	<a href="<?= \yii\helpers\Url::to(['/site/about']) ?>"><i class="fa fa-user"></i><span>Tentang Kami</span></a>
             </li>
             <li>
-            	<a href="<?= \yii\helpers\Url::to(['/site/gotohow']) ?>"><span class="fa fa-github"></span>Bagaimana Cara Kerjanya?</a>
+            	<a href="<?= \yii\helpers\Url::to(['/site/gotohow']) ?>"><i class="fa fa-github"></i><span>Bagaimana Cara Kerjanya?</span></a>
             </li>
         </ul>
 

@@ -23,8 +23,8 @@ function requestData() {
                                 
             chart.series[0].addPoint([x,y], true, shift);
             
-            // call it again after one second
-            setTimeout(requestData, 1000);
+            // call it again after five minute
+            setTimeout(requestData, 300000);
          	
         },
         cache: false
@@ -41,7 +41,7 @@ $jq(document).ready(function() {
             }
         },
         title: {
-            text: 'Suhu'
+            text: 'Suhu (Celcius)'
         },
         xAxis: {
             type: 'datetime',
@@ -76,8 +76,8 @@ function requestDataHum() {
                                 
             chartHum.series[0].addPoint([x,y], true, shift);
             
-            // call it again after one second
-            setTimeout(requestDataHum, 1000);
+            // call it again after five minute
+            setTimeout(requestDataHum, 300000);
          	
         },
         cache: false
@@ -94,7 +94,7 @@ $jq(document).ready(function() {
             }
         },
         title: {
-            text: 'Kelembaban'
+            text: 'Kelembaban (%)'
         },
         xAxis: {
             type: 'datetime',
@@ -129,8 +129,8 @@ function requestDataSpeed() {
                                 
             chartSpeed.series[0].addPoint([x,y], true, shift);
             
-            // call it again after one second
-            setTimeout(requestDataSpeed, 1000);
+            // call it again after five minute
+            setTimeout(requestDataSpeed, 300000);
          	
         },
         cache: false
@@ -147,7 +147,7 @@ $jq(document).ready(function() {
             }
         },
         title: {
-            text: 'Kecepatan Angin'
+            text: 'Kecepatan Angin (km/jam)'
         },
         xAxis: {
             type: 'datetime',
@@ -182,8 +182,8 @@ function requestDataHujan() {
                                 
             chartHujan.series[0].addPoint([x,y], true, shift);
             
-            // call it again after one second
-            setTimeout(requestDataHujan, 1000);
+            // call it again after five minute
+            setTimeout(requestDataHujan, 300000);
          	
         },
         cache: false
@@ -200,7 +200,7 @@ $jq(document).ready(function() {
             }
         },
         title: {
-            text: 'Curah Hujan'
+            text: 'Curah Hujan (%)'
         },
         xAxis: {
             type: 'datetime',
@@ -235,8 +235,8 @@ function requestDataCahaya() {
                                 
             chartCahaya.series[0].addPoint([x,y], true, shift);
             
-            // call it again after one second
-            setTimeout(requestDataCahaya, 1000);
+            // call it again after five minute
+            setTimeout(requestDataCahaya, 300000);
          	
         },
         cache: false
@@ -288,8 +288,8 @@ function requestDataTekanan() {
                                 
             chartTekanan.series[0].addPoint([x,y], true, shift);
             
-            // call it again after one second
-            setTimeout(requestDataTekanan, 1000);
+            // call it again after five minute
+            setTimeout(requestDataTekanan, 300000);
          	
         },
         cache: false
@@ -306,7 +306,7 @@ $jq(document).ready(function() {
             }
         },
         title: {
-            text: 'Tekanan Udara'
+            text: 'Tekanan Udara (Pa)'
         },
         xAxis: {
             type: 'datetime',

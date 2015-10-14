@@ -91,5 +91,29 @@ a.desc:after {
 }
 
 .logo-mini{
-    font-family: tahoma;
+    font-family: "Impact", Charcoal, sans-serif
+}
+
+.logo{
+    background-color: #85E085 !important;
+}
+
+.navbar{
+    background-color: #85E085 !important;
+}
+
+.panel-heading{
+    background-color: #85E085 !important;
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side{
+    background-color: #5E5E47 !important;
+}
+
+.btn.btn-success{
+    width: 150px;
+}
+
+.btn.btn-info{
+    width: 150px;
 }
